@@ -9,19 +9,19 @@ There are flowers growing on your screen...
 Reach **Lv.20** before your HP reaches zero.
 
 ## Screenshots
-![Welcome Screen](screenshots/welcome.png)  
+![Welcome Screen](images/welcome.png)  
 The starting screen with instructions and sound test.
 
-![Gameplay Early](screenshots/gameplay_early.png)  
+![Gameplay Early](images/gameplay_early.png)  
 Early game: Shooting Flowey, collecting flowers, HP/EXP bars.
 
-![Gameplay Mid](screenshots/gameplay_mid.png)  
+![Gameplay Mid](images/gameplay_mid.png)  
 Mid-game: Bones appearing, feeding sheep, enemy pursuit.
 
-![Win Screen](screenshots/win.png)  
+![Win Screen](images/win.png)  
 Victory screen showing time spent.
 
-![Lose Screen](screenshots/lose.png)  
+![Lose Screen](images/lose.png)  
 Defeat screen when HP depletes.
 
 ## Features
@@ -37,7 +37,7 @@ Defeat screen when HP depletes.
 
 ## Controls
 
-- **Mouse** → Move heart & aim
+- **Mouse** → Move heart
 - **Left Click** → Shoot flowers / Feed sheep (need ≥2 flowers)
 - **Any key** → Start game from welcome screen
 - **R** → Restart after win/lose
