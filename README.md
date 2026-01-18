@@ -4,25 +4,40 @@ A simple yet challenging shooting survival game inspired by **Undertale**'s famo
 
 ## Game Concept
 
-There are flowers growing on your screen...  
+There are flowers growing on your screen.
 **Shoot them** to gain EXP → Level up → Survive longer  
 Reach **Lv.20** before your HP reaches zero.
 
 ## Screenshots
-![Welcome Screen](images/welcome.png)  
-The starting screen with instructions and sound test.
+**Welcome Screen:** The starting screen with instructions and sound test.
+- <img src="images/welcome.png" width="45%">
 
-![Gameplay Early](images/gameplay_early.png)  
-Early game: Shooting Flowey, collecting flowers, HP/EXP bars.
+**Early game:** Shooting Flowey, collecting flowers, HP/EXP bars.
+- <img src="images/gameplay_early.png" width="45%">
 
-![Gameplay Mid](images/gameplay_mid.png)  
-Mid-game: Bones appearing, feeding sheep, enemy pursuit.
+**Mid-game:** Bones appearing, feeding sheep, enemy pursuit.
+- <img src="images/gameplay_mid1.png" width="45%"> <img src="images/gameplay_mid2.png" width="45%">
 
-![Win Screen](images/win.png)  
-Victory screen showing time spent.
+**Win/Lose Screen:** Victory screen showing time spent to reach Lv20. Lose screen appears when HP depletes.
+- <img src="images/win.png" width="45%"> <img src="images/lose.png" width="45%">
 
-![Lose Screen](images/lose.png)  
-Defeat screen when HP depletes.
+## Logic
+**Heart:** <img src="minigame/data/soul_red.png" width="1.5%">
+- The red heart represents your cursor. Move the heart to collect flowers and feed sheeps.
+  - **Mouse** → Move heart
+  - **Left Click** → Shoot flowers / Feed sheep (need ≥2 flowers)
+ 
+**Flower:** <img src="minigame/data/flowey_alive.png" width="2%"> (1 Flower = 2 EXP)
+- Click the flowers to collect them.
+
+**Sheep:** <img src="minigame/data/asriel.png" width="1.6%"> (1 Sheep = 10 EXP)
+- After collecting enough flowers, you can consume 2 flowers to feed a sheep.
+
+**Bone:** <img src="minigame/data/bone.png" width="3%"> (1 Bone → HP-7)
+- Bones appear and fly across screen after you reach lv5. It hurts you if your cursor torch them. Try to move your cursor away from the bones.
+
+**Enemy:** <img src="minigame/data/chara.png" width="1.6%"> (0.1 second → HP-1)
+- Moving enemy appears and chase your cursor after you reach lv10. It hurts you if your cursor torch them. Try to move your cursor away from the enemy.
 
 ## Features
 
