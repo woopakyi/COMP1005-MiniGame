@@ -1,18 +1,18 @@
 # COMP1005 Mini Game Project
 
-A simple yet challenging shooting survival game inspired by **Undertale**'s famous encounter, created as the mini project for **COMP1005 Essence of Computing**.
+A simple yet challenging shooting survival game inspired by **Undertale**'s famous encounter, created as the mini project for **COMP1005**.
 
 ## Game Concept
 
 There are flowers growing on your screen.
-**Shoot them** to gain EXP → Level up → Survive longer  
+**Collect flowers** to gain EXP → Level up → Survive longer  
 Reach **Lv.20** before your HP reaches zero.
 
 ## Screenshots
-**Welcome Screen:** The starting screen with instructions and sound test.
+**Welcome Screen:** The starting screen with sound test. Press any key to test the volume of sound.
 - <img src="images/welcome.png" width="45%">
 
-**Early game:** Shooting Flowey, collecting flowers, HP/EXP bars.
+**Early game:** Collecting flowers, HP/EXP bars.
 - <img src="images/gameplay_early.png" width="45%">
 
 **Mid-game:** Bones appearing, feeding sheep, enemy pursuit.
@@ -22,22 +22,25 @@ Reach **Lv.20** before your HP reaches zero.
 - <img src="images/win.png" width="45%"> <img src="images/lose.png" width="45%">
 
 ## Logic
-**Heart:** <img src="minigame/data/soul_red.png" width="1.5%">
+**Heart:** <img src="minigame/data/soul_red.png" width="2%">
 - The red heart represents your cursor. Move the heart to collect flowers and feed sheeps.
   - **Mouse** → Move heart
   - **Left Click** → Shoot flowers / Feed sheep (need ≥2 flowers)
  
-**Flower:** <img src="minigame/data/flowey_alive.png" width="2%"> (1 Flower = 2 EXP)
+**Flower:** <img src="minigame/data/flowey_alive.png" width="3%"> (1 Flower → +2 EXP)
 - Click the flowers to collect them.
 
-**Sheep:** <img src="minigame/data/asriel.png" width="1.6%"> (1 Sheep = 10 EXP)
+**Flower Collecting Bar:** <img src="images/collection.png" width="15%">
+- It shows the flower you have collected and held. You can hold up to 8 flowers at once.
+
+**Sheep:** <img src="minigame/data/asriel.png" width="2.4%"> (1 Sheep → +10 EXP)
 - After collecting enough flowers, you can consume 2 flowers to feed a sheep.
 
-**Bone:** <img src="minigame/data/bone.png" width="3%"> (1 Bone → HP-7)
-- Bones appear and fly across screen after you reach lv5. It hurts you if your cursor torch them. Try to move your cursor away from the bones.
+**Bone:** <img src="minigame/data/bone.png" width="5%"> (1 Bone → -7 HP)
+- Bones appear and fly across screen after you reach lv5. They hurt you if your cursor torch them. Try to move your cursor away from the bones.
 
-**Enemy:** <img src="minigame/data/chara.png" width="1.6%"> (0.1 second → HP-1)
-- Moving enemy appears and chase your cursor after you reach lv10. It hurts you if your cursor torch them. Try to move your cursor away from the enemy.
+**Enemy:** <img src="minigame/data/chara.png" width="2.4%"> (0.1 second → HP-1)
+- Moving enemy appears and chase your cursor after you reach lv10. It hurts you if your cursor torch it. Try to move your cursor away from the enemy.
 
 ## Features
 
@@ -50,13 +53,6 @@ Reach **Lv.20** before your HP reaches zero.
 - Sound effects (hurt, heal, victory, etc.) using Minim library
 - Pixel-art style with Undertale-inspired assets
 
-## Controls
-
-- **Mouse** → Move heart
-- **Left Click** → Shoot flowers / Feed sheep (need ≥2 flowers)
-- **Any key** → Start game from welcome screen
-- **R** → Restart after win/lose
-
 ## Requirements
 
 Processing 3.5.4 or newer version
@@ -66,7 +62,6 @@ Processing 3.5.4 or newer version
 ## Credits / References
 
 - Game assets: Undertale (by Toby Fox)
-
 
 ## License
 This project is for educational purposes only. Assets are used under fair use for non-commercial academic work.
