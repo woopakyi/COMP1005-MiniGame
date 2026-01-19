@@ -39,7 +39,7 @@ Reach **Lv.20** before your HP reaches zero.
 **Bone:** <img src="minigame/data/bone.png" width="5%"> (1 Bone → -7 HP)
 - Bones appear and fly across screen after you reach lv5. They hurt you if your cursor torch them. Try to move your cursor away from the bones.
 
-**Enemy:** <img src="minigame/data/chara.png" width="2.4%"> (0.1 second → HP-1)
+**Enemy:** <img src="minigame/data/chara.png" width="2.4%"> (0.1 second → -1 HP)
 - Moving enemy appears and chase your cursor after you reach lv10. It hurts you if your cursor torch it. Try to move your cursor away from the enemy.
 
 ## Features
