@@ -1,0 +1,31 @@
+:root {
+  --bg0: #0d0d0d;
+  --bg1: #262626;
+  --ink: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: radial-gradient(circle at 30% 20%, var(--bg1), var(--bg0) 60%);
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 12px;
+}
+
+canvas {
+  max-width: min(96vw, 720px);
+  height: auto !important;
+  border: 2px solid var(--ink);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}

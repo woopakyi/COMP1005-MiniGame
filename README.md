@@ -63,3 +63,27 @@ Processing 3.5.4 or newer version
 
 ## License
 This project is for educational purposes only. Assets are used under fair use for non-commercial academic work.
+
+## GitHub Pages (p5.js Build)
+
+This repo includes a GitHub Pages-ready version of the game in `docs/`:
+
+- Entry page: `docs/index.html`
+- Game script: `docs/sketch.js`
+- Assets: `docs/assets/`
+
+### Deploy Steps
+
+1. Push your repository to GitHub.
+2. Open **Repository Settings -> Pages**.
+3. Under **Build and deployment**:
+  - **Source**: Deploy from a branch
+  - **Branch**: `main` (or your default branch)
+  - **Folder**: `/docs`
+4. Save and wait for deployment.
+5. Open the generated Pages URL.
+
+### Notes
+
+- Browser audio only starts after user interaction, so click or press a key on the start screen.
+- Keep all filenames in `docs/assets/` unchanged.
