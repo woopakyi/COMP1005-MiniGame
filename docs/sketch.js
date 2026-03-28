@@ -185,6 +185,8 @@ function drawLose() {
 
 function drawGame() {
   background(0);
+  let reachedWin = false;
+  let lostHp = false;
 
   line(721, 0, 721, 720);
   imageMode(CENTER);
@@ -273,8 +275,7 @@ function drawGame() {
 
   if (lv >= 20 && stage === 1) {
     stopTime = (millis() - startTime) / 1000;
-    stage = 2;
-    return;
+    reachedWin = true;
   }
 
   textSize(24);
@@ -290,8 +291,7 @@ function drawGame() {
   if (hp > 0) {
     rect(180, 445, (210 * hp) / maxHp, 25);
   } else {
-    stage = 3;
-    return;
+    lostHp = true;
   }
 
   if (exp >= maxExp) {
@@ -315,7 +315,7 @@ function drawGame() {
   text(exp + "/" + maxExp, 630, 463);
 
   stroke(0);
-  fill(255);
+  fill(0);
   rect(545, 446, 82, 22);
   noStroke();
   fill(0, 255, 255);
@@ -362,6 +362,12 @@ function drawGame() {
   text("Collect 2 flowers to feed 1 sheep", 40, 605);
   text("Flower = 2Exp. Sheep = 10Exp", 40, 635);
   text("Aim: reach Lv20, avoid enemy and bones", 40, 665);
+
+  if (reachedWin) {
+    stage = 2;
+  } else if (lostHp) {
+    stage = 3;
+  }
 }
 
 function mousePressed() {
