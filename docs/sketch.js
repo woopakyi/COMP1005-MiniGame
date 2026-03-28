@@ -32,6 +32,7 @@ let test;
 
 let playedWinSound;
 let playedLoseSound;
+let frozenFrame;
 
 function preload() {
   soundFormats("wav");
@@ -109,6 +110,7 @@ function resetGameState() {
 
   playedWinSound = false;
   playedLoseSound = false;
+  frozenFrame = null;
 }
 
 function draw() {
@@ -144,6 +146,11 @@ function drawHome() {
 }
 
 function drawWin() {
+  if (frozenFrame) {
+    imageMode(CORNER);
+    image(frozenFrame, 0, 0, width, height);
+  }
+
   stroke(255);
   strokeWeight(3);
   fill(120);
@@ -164,6 +171,11 @@ function drawWin() {
 }
 
 function drawLose() {
+  if (frozenFrame) {
+    imageMode(CORNER);
+    image(frozenFrame, 0, 0, width, height);
+  }
+
   stroke(255);
   strokeWeight(3);
   fill(120);
@@ -364,8 +376,10 @@ function drawGame() {
   text("Aim: reach Lv20, avoid enemy and bones", 40, 665);
 
   if (reachedWin) {
+    frozenFrame = get();
     stage = 2;
   } else if (lostHp) {
+    frozenFrame = get();
     stage = 3;
   }
 }
