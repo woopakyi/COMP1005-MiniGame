@@ -1,6 +1,6 @@
 # COMP1005 Mini Game Project
 
-A simple yet challenging survival game inspired by **Undertale**'s famous encounter, created as the mini project for **COMP1005**.
+A simple yet challenging survival game inspired by **Undertale**'s famous encounter, created as the mini project for **COMP1005**. You may run the game locally by Processing or online by [Clicking Here](https://woopakyi.github.io/COMP1005-MiniGame).
 
 ## Game Concept
 
@@ -51,11 +51,23 @@ There are flowers growing on your screen. Collect flowers and feed sheeps to gai
 - Sound effects (hurt, heal, victory, etc.) using Minim library
 - Pixel-art style with Undertale-inspired assets
 
-## Requirements
+## Requirements of Processing
 
-Processing 3.5.4 or newer version
+This repo includes a Processing version of the game in `minigame/`.
+
+Requirements:
+- Processing 3.5.4 or newer version
 - Import Modes: Python Mode for Processing 3 (for Python mode)
 - Import Libraries: Minim (for sound)
+
+## GitHub Pages
+
+This repo includes a GitHub Pages version of the game in `docs/`.
+
+Link of GitHub Pages: [Click Here](https://woopakyi.github.io/COMP1005-MiniGame)
+- Entry page: `docs/index.html`
+- Game script: `docs/sketch.js`
+- Assets: `docs/assets/`
 
 ## Credits / References
 
@@ -63,27 +75,3 @@ Processing 3.5.4 or newer version
 
 ## License
 This project is for educational purposes only. Assets are used under fair use for non-commercial academic work.
-
-## GitHub Pages (p5.js Build)
-
-This repo includes a GitHub Pages-ready version of the game in `docs/`:
-
-- Entry page: `docs/index.html`
-- Game script: `docs/sketch.js`
-- Assets: `docs/assets/`
-
-### Deploy Steps
-
-1. Push your repository to GitHub.
-2. Open **Repository Settings -> Pages**.
-3. Under **Build and deployment**:
-  - **Source**: Deploy from a branch
-  - **Branch**: `main` (or your default branch)
-  - **Folder**: `/docs`
-4. Save and wait for deployment.
-5. Open the generated Pages URL.
-
-### Notes
-
-- Browser audio only starts after user interaction, so click or press a key on the start screen.
-- Keep all filenames in `docs/assets/` unchanged.
